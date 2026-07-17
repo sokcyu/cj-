@@ -1,0 +1,44 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "keyword": "행복",
+      "korean": "행복",
+      "category": "emotion",
+      "description": "행복과 기쁨을 주제로 한 노래",
+      "created_at": "2026-07-17"
+    },
+    {
+      "id": 2,
+      "keyword": "사랑",
+      "korean": "사랑",
+      "category": "emotion",
+      "description": "사랑과 로맨스를 주제로 한 노래",
+      "created_at": "2026-07-17"
+    },
+    {
+      "id": 3,
+      "keyword": "평화",
+      "korean": "평화",
+      "category": "theme",
+      "description": "평화와 조화를 주제로 한 노래",
+      "created_at": "2026-07-17"
+    },
+    {
+      "id": 4,
+      "keyword": "세계",
+      "korean": "세계",
+      "category": "theme",
+      "description": "세계와 국제주의를 주제로 한 노래",
+      "created_at": "2026-07-17"
+    },
+    {
+      "id": 5,
+      "keyword": "민주주의",
+      "korean": "민주주의",
+      "category": "political",
+      "description": "민주주의와 자유를 주제로 한 노래",
+      "created_at": "2026-07-17"
+    }
+  ]
+}
