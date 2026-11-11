@@ -32,8 +32,5 @@
 - Cloud Functions 생성 API는 관리자 인증 없이 누구나 호출할 수 있습니다. App Check 활성화 및 남용 방어가 중요합니다.
 - Firestore 보안 규칙은 관리자 외 직접 읽기/쓰기 차단. 공개 신청은 callable Function을 통해서만 처리합니다.
 
-## 휴대전화만으로 GitHub Actions에서 테스트 APK 빌드
-- GitHub 저장소 루트에 `package.json`, `web/`, `capacitor.config.json`, `.github/workflows/android-apk.yml`가 위치해야 합니다. ZIP 안의 `clubmix-app` 폴더 *내용물*을 저장소 최상위에 업로드하세요.
-- `capacitor.config.json`의 `server.url`을 Firebase Hosting에 배포된 실제 HTTPS 주소로 바꾸세요. `REPLACE_ME` 그대로면 앱은 실행되어도 사이트에 연결되지 않습니다.
-- GitHub > Actions > Build DJ CLUBMIX Android APK > Run workflow. 빌드 완료 후 해당 실행의 Artifacts에서 ZIP 다운로드, 압축 해제하여 `app-debug.apk` 설치.
-- 이 APK는 테스트용 디버그 서명 APK입니다. 공개 배포에는 안전한 릴리스 서명과 보안 검토가 필요합니다.
+## 음악 신청 기능 보강 (2026-11-11)
+신청자 페이지에서 닉네임, 곡 제목, 아티스트, 유튜브 링크를 입력해 접수합니다. 신청 후 조회 코드를 발급하고 5초마다 상태를 확인합니다. 관리자 로그인 후 신청 목록이 표시되도록 목록 갱신 오류를 수정했습니다. Firebase 설정 및 배포가 완료되어야 실제 접수가 가능합니다.
